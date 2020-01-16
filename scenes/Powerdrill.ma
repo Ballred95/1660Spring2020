@@ -1,6 +1,6 @@
 //Maya ASCII 2019 scene
 //Name: Powerdrill.ma
-//Last modified: Thu, Jan 16, 2020 10:38:37 AM
+//Last modified: Thu, Jan 16, 2020 10:43:48 AM
 //Codeset: 1252
 requires maya "2019";
 requires "stereoCamera" "10.0";
@@ -16,13 +16,13 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "3F88772E-402C-837D-7562-CDA435B6DD98";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -12.809427863438005 -0.90113750104045254 16.463270319157598 ;
-	setAttr ".r" -type "double3" 1.4616472505436411 -402.99999999868481 0 ;
+	setAttr ".t" -type "double3" -13.391831541868914 4.4826651612129211 21.270720016420761 ;
+	setAttr ".r" -type "double3" -10.538352749457301 -393.39999999867257 4.7621770704757407e-16 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "ACB96E60-40CC-E39C-63E1-5BB718454A6F";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 20.766302634528561;
+	setAttr ".coi" 25.778680769049558;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
