@@ -1,6 +1,6 @@
 //Maya ASCII 2019 scene
 //Name: Jackhammerlowpoly.ma
-//Last modified: Fri, Jan 17, 2020 01:48:11 PM
+//Last modified: Fri, Jan 17, 2020 01:55:12 PM
 //Codeset: 1252
 requires maya "2019";
 requires "stereoCamera" "10.0";
@@ -15,13 +15,13 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "814E8B7D-4C90-98B4-CF62-EA944EA75A3D";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -6.4232123247463431 1.9072576627058413 10.173884561985254 ;
-	setAttr ".r" -type "double3" -4.5383527296234201 -33.000000000000291 2.37023540814665e-16 ;
+	setAttr ".t" -type "double3" -12.721540983522294 4.6537934518508539 5.674860175572995 ;
+	setAttr ".r" -type "double3" -15.338352729624022 -66.999999999999858 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "0FD0FF29-4607-772B-FF84-40B283680652";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 12.492514719263724;
+	setAttr ".coi" 14.993835473331886;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
