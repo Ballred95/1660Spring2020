@@ -1,6 +1,6 @@
 //Maya ASCII 2019 scene
 //Name: scissors.ma
-//Last modified: Fri, Jan 17, 2020 11:15:07 PM
+//Last modified: Sat, Jan 18, 2020 05:54:19 PM
 //Codeset: 1252
 requires maya "2019";
 requires "stereoCamera" "10.0";
@@ -16,13 +16,13 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "AC22178A-42DF-62A9-FCAA-74BC5C8B836E";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -9.7144900440335675 5.0321265501104868 2.8820964494393078 ;
-	setAttr ".r" -type "double3" -12.938352729333459 -74.599999999994907 2.9942397030455162e-15 ;
+	setAttr ".t" -type "double3" -18.97196064201124 8.2058711135640294 0.39630324907106057 ;
+	setAttr ".r" -type "double3" -16.538352729326213 -91.799999999996018 5.0888874903416268e-14 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "DD371880-4D07-8AC6-CA64-E8B82019D13C";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 8.8017200971605707;
+	setAttr ".coi" 18.264973160262063;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -3330,6 +3330,8 @@ select -ne :defaultLightSet;
 select -ne :hardwareRenderGlobals;
 	setAttr ".ctrs" 256;
 	setAttr ".btrs" 512;
+select -ne :ikSystem;
+	setAttr -s 4 ".sol";
 connectAttr ":defaultColorMgtGlobals.cme" "imagePlaneShape1.cme";
 connectAttr ":defaultColorMgtGlobals.cfe" "imagePlaneShape1.cmcf";
 connectAttr ":defaultColorMgtGlobals.cfp" "imagePlaneShape1.cmcp";
