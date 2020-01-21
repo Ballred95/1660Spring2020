@@ -1,6 +1,6 @@
 //Maya ASCII 2019 scene
 //Name: stethascope.ma
-//Last modified: Mon, Jan 20, 2020 09:47:33 PM
+//Last modified: Mon, Jan 20, 2020 09:49:16 PM
 //Codeset: 1252
 requires maya "2019";
 requires "stereoCamera" "10.0";
@@ -15,13 +15,13 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "A8AE2881-47BF-4AA3-C73C-1DA4252B5FEB";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 7.0369907552297253 6.6115123635927606 20.894403472902219 ;
-	setAttr ".r" -type "double3" -11.13835272966422 19.400000000003658 4.2150104414162068e-16 ;
+	setAttr ".t" -type "double3" -8.4571215540417022 7.4840127860667671 10.187928715192887 ;
+	setAttr ".r" -type "double3" -10.538352729662925 -36.199999999999946 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "E774097D-4185-DDC3-562C-BBA6E93DC2E0";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 23.141036759336966;
+	setAttr ".coi" 15.016882858930444;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -1550,8 +1550,7 @@ createNode mesh -n "pCylinder5Shape" -p "pCylinder5";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
-	setAttr ".dr" 3;
-	setAttr ".dsm" 2;
+	setAttr ".dr" 1;
 	setAttr ".ai_translator" -type "string" "polymesh";
 createNode transform -n "pPlane1";
 	rename -uid "15FD86FB-4993-A2A1-7C42-318527B38591";
@@ -2400,8 +2399,7 @@ createNode mesh -n "pCylinder8Shape" -p "pCylinder8";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
-	setAttr ".dr" 3;
-	setAttr ".dsm" 2;
+	setAttr ".dr" 1;
 	setAttr ".ai_translator" -type "string" "polymesh";
 createNode transform -n "pCylinder9";
 	rename -uid "CB496C79-4FB7-8CA6-4FB3-A798C8C4BFF5";
@@ -2419,8 +2417,7 @@ createNode mesh -n "pCylinder9Shape" -p "pCylinder9";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
-	setAttr ".dr" 3;
-	setAttr ".dsm" 2;
+	setAttr ".dr" 1;
 	setAttr ".ai_translator" -type "string" "polymesh";
 createNode transform -n "pCylinder10";
 	rename -uid "495DE23B-4464-1DBA-CF8A-BB807E540F75";
@@ -2559,6 +2556,7 @@ createNode mesh -n "pCylinderShape9" -p "pCylinder11";
 	setAttr ".pt[98]" -type "float3" 8.6846943 0.50892466 0 ;
 	setAttr ".pt[99]" -type "float3" 8.6846943 0.50892466 0 ;
 	setAttr ".pt[100]" -type "float3" 8.6846943 0.50892466 0 ;
+	setAttr ".dr" 1;
 	setAttr ".ai_translator" -type "string" "polymesh";
 createNode lightLinker -s -n "lightLinker1";
 	rename -uid "EA40D7C8-4536-0A46-9493-8D928DE02E17";
