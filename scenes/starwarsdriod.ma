@@ -1,6 +1,6 @@
 //Maya ASCII 2019 scene
 //Name: starwarsdriod.ma
-//Last modified: Tue, Jan 21, 2020 10:37:45 AM
+//Last modified: Tue, Jan 21, 2020 10:42:39 AM
 //Codeset: 1252
 requires maya "2019";
 requires "stereoCamera" "10.0";
@@ -15,13 +15,13 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "B6D03D32-4E5B-127F-9CF9-EDA5921BB4C0";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -1.6935386569653537 5.1498223447649227 5.9913749048695157 ;
-	setAttr ".r" -type "double3" -7.5383527295958537 -6.5999999999998904 2.5013856136790189e-16 ;
+	setAttr ".t" -type "double3" -6.9644722996621171 6.5316754001344917 0.0295018778013727 ;
+	setAttr ".r" -type "double3" -23.138352729595795 -78.999999999997357 -8.3343939712753406e-15 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "1EE467FD-4389-FEE5-3144-09B9B57F35FB";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 6.9966751452556952;
+	setAttr ".coi" 5.82946687613547;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -384,7 +384,8 @@ createNode mesh -n "pCubeShape5" -p "pCube5";
 	setAttr ".ai_translator" -type "string" "polymesh";
 createNode transform -n "pCube6";
 	rename -uid "8B07C92D-4735-35ED-6289-6A9BD1AAA7E5";
-	setAttr ".t" -type "double3" -2.5924481474472185 4.2884562679200187 -0.01601269986889875 ;
+	setAttr ".t" -type "double3" -1.1479187065866676 4.2247372759977502 0.30336741266144424 ;
+	setAttr ".r" -type "double3" 0 -175.86701315824791 0 ;
 	setAttr ".s" -type "double3" 0.23969226000417104 0.23969226000417104 0.23969226000417104 ;
 createNode mesh -n "pCubeShape6" -p "pCube6";
 	rename -uid "BA2CB47E-4760-47D3-5027-B4829EA03EEF";
@@ -401,6 +402,71 @@ createNode mesh -n "pCubeShape6" -p "pCube6";
 		0 0 -5.9604645e-08 0 0 1.1920929e-07 0 0 -0.96214986 0 0 -0.81799012 -5.5511151e-17 
 		0 -0.96214986 0 0 -0.81799012 -5.5511151e-17 0 -1.5365117 0.36649132 0 -1.4740543 
 		-0.36649132 0 -2.2694936 0.36649132 0 -2.207037 -0.36649132;
+	setAttr ".ai_translator" -type "string" "polymesh";
+createNode transform -n "pCube7";
+	rename -uid "0CD3B74F-430F-87FB-5574-30BEA9EED8BC";
+	setAttr ".t" -type "double3" -1.3095030783713224 4.2884562679200187 -0.30402776826630867 ;
+	setAttr ".r" -type "double3" 0 -175.86701315824791 0 ;
+	setAttr ".s" -type "double3" 0.23969226000417104 0.23969226000417104 0.23969226000417104 ;
+createNode mesh -n "pCubeShape7" -p "pCube7";
+	rename -uid "AC0AE946-442F-4136-C8DE-AB94379B0EB3";
+	setAttr -k off ".v";
+	setAttr ".vir" yes;
+	setAttr ".vif" yes;
+	setAttr ".pv" -type "double2" 0.875 0.125 ;
+	setAttr ".uvst[0].uvsn" -type "string" "map1";
+	setAttr -s 22 ".uvst[0].uvsp[0:21]" -type "float2" 0.375 0 0.625 0 0.375
+		 0.25 0.625 0.25 0.375 0.5 0.625 0.5 0.375 0.75 0.625 0.75 0.375 1 0.625 1 0.875 0
+		 0.875 0.25 0.125 0 0.125 0.25 0.625 0 0.875 0 0.875 0.25 0.625 0.25 0.625 0 0.875
+		 0 0.875 0.25 0.625 0.25;
+	setAttr ".cuvs" -type "string" "map1";
+	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
+	setAttr -s 16 ".pt[4:15]" -type "float3"  0 -5.9604645e-08 0 0 1.1920929e-07 
+		0 0 -5.9604645e-08 0 0 1.1920929e-07 0 0 -0.96214986 0 0 -0.81799012 -5.5511151e-17 
+		0 -0.96214986 0 0 -0.81799012 -5.5511151e-17 0 -1.5365117 0.36649132 0 -1.4740543 
+		-0.36649132 0 -2.2694936 0.36649132 0 -2.207037 -0.36649132;
+	setAttr -s 16 ".vt[0:15]"  -0.49999809 -0.5 0.5 0.5 -0.5 0.5 -0.49999809 0.5 0.5
+		 0.5 0.5 0.5 -0.49999809 0.5 -0.5 0.5 0.5 -0.5 -0.49999809 -0.5 -0.5 0.5 -0.5 -0.5
+		 2.072546959 -0.5 -0.5 2.072546959 -0.5 0.5 2.072546959 0.5 -0.5 2.072546959 0.5 0.5
+		 3.091286659 -0.5 -0.5 3.091286659 -0.5 0.5 3.091286659 0.5 -0.5 3.091286659 0.5 0.5;
+	setAttr -s 28 ".ed[0:27]"  0 1 0 2 3 0 4 5 0 6 7 0 0 2 0 1 3 1 2 4 0
+		 3 5 1 4 6 0 5 7 1 6 0 0 7 1 1 7 8 0 1 9 0 8 9 1 5 10 0 10 8 1 3 11 0 11 10 1 9 11 1
+		 8 12 0 9 13 0 12 13 0 10 14 0 14 12 0 11 15 0 15 14 0 13 15 0;
+	setAttr -s 14 -ch 56 ".fc[0:13]" -type "polyFaces" 
+		f 4 0 5 -2 -5
+		mu 0 4 0 1 3 2
+		f 4 1 7 -3 -7
+		mu 0 4 2 3 5 4
+		f 4 2 9 -4 -9
+		mu 0 4 4 5 7 6
+		f 4 3 11 -1 -11
+		mu 0 4 6 7 9 8
+		f 4 -23 -25 -27 -28
+		mu 0 4 18 19 20 21
+		f 4 10 4 6 8
+		mu 0 4 12 0 2 13
+		f 4 -12 12 14 -14
+		mu 0 4 1 10 15 14
+		f 4 -10 15 16 -13
+		mu 0 4 10 11 16 15
+		f 4 -8 17 18 -16
+		mu 0 4 11 3 17 16
+		f 4 -6 13 19 -18
+		mu 0 4 3 1 14 17
+		f 4 -15 20 22 -22
+		mu 0 4 14 15 19 18
+		f 4 -17 23 24 -21
+		mu 0 4 15 16 20 19
+		f 4 -19 25 26 -24
+		mu 0 4 16 17 21 20
+		f 4 -20 21 27 -26
+		mu 0 4 17 14 18 21;
+	setAttr ".cd" -type "dataPolyComponent" Index_Data Edge 0 ;
+	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
+	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
+	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 	setAttr ".ai_translator" -type "string" "polymesh";
 createNode lightLinker -s -n "lightLinker1";
 	rename -uid "C43A3E62-461C-110A-3323-50B8F778B47A";
@@ -559,7 +625,7 @@ select -ne :postProcessList1;
 	setAttr -s 2 ".p";
 select -ne :defaultRenderingList1;
 select -ne :initialShadingGroup;
-	setAttr -s 8 ".dsm";
+	setAttr -s 9 ".dsm";
 	setAttr ".ro" yes;
 select -ne :initialParticleSE;
 	setAttr ".ro" yes;
@@ -600,4 +666,5 @@ connectAttr "pCylinderShape1.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "pCylinderShape2.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "pCubeShape5.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "pCubeShape6.iog" ":initialShadingGroup.dsm" -na;
+connectAttr "pCubeShape7.iog" ":initialShadingGroup.dsm" -na;
 // End of starwarsdriod.ma
