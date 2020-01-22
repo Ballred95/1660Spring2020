@@ -1,6 +1,6 @@
 //Maya ASCII 2019 scene
 //Name: Sword.ma
-//Last modified: Tue, Jan 21, 2020 06:48:04 PM
+//Last modified: Tue, Jan 21, 2020 06:50:02 PM
 //Codeset: 1252
 requires maya "2019";
 requires "mtoa" "3.1.2";
@@ -14,8 +14,8 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "1F02747B-4D8B-E327-80DA-09B287B91900";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -19.15611474432653 12.586815762843184 21.466672013557396 ;
-	setAttr ".r" -type "double3" -18.938352729627361 -46.599999999997642 2.3145193526656254e-15 ;
+	setAttr ".t" -type "double3" -15.598348101839683 15.549346204086993 23.138517849464129 ;
+	setAttr ".r" -type "double3" -24.938352729629216 -39.000000000000021 2.0463045806097387e-15 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "CFC5DAF1-430A-94CE-14CD-D5ABE85BFD61";
 	setAttr -k off ".v" no;
