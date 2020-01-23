@@ -1,6 +1,6 @@
 //Maya ASCII 2019 scene
 //Name: troopergun.ma
-//Last modified: Thu, Jan 23, 2020 09:11:53 AM
+//Last modified: Thu, Jan 23, 2020 10:13:10 AM
 //Codeset: 1252
 requires maya "2019";
 requires "mtoa" "3.1.2";
@@ -14,13 +14,13 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "0852894B-48C0-A4F0-779D-E098E3286B0D";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 3.5507474025825205 6.8126208232191559 20.65887666402741 ;
-	setAttr ".r" -type "double3" -4.5383527285103984 -745.40000000001726 0 ;
+	setAttr ".t" -type "double3" 7.8527465232212252 -0.55439429460176326 12.645743428854654 ;
+	setAttr ".r" -type "double3" 18.261647271474654 -732.19999999998367 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "602A20F7-4DB0-E7CC-9C5B-73B37901F22E";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 23.17608110581849;
+	setAttr ".coi" 16.088452017121455;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
