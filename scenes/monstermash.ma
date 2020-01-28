@@ -1,6 +1,6 @@
 //Maya ASCII 2019 scene
 //Name: monstermash.ma
-//Last modified: Tue, Jan 28, 2020 10:35:11 AM
+//Last modified: Tue, Jan 28, 2020 10:36:28 AM
 //Codeset: 1252
 requires maya "2019";
 requires "mtoa" "3.1.2";
@@ -14,13 +14,13 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "8B500DE0-43E6-BAE1-CF5C-BFB667F43908";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -1.3003806061417755 7.7071727751611432 35.047226096465394 ;
+	setAttr ".t" -type "double3" -1.6957795055495577 8.7367749694535153 34.903847120283125 ;
 	setAttr ".r" -type "double3" -6.9383527295545608 -2.5999999999986443 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "6E1FA3DD-40B1-8DBF-7917-EF9BB50EA38D";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 36.106754972686261;
+	setAttr ".coi" 36.106754972686872;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
