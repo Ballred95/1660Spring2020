@@ -1,6 +1,6 @@
 //Maya ASCII 2019 scene
 //Name: helmet.ma
-//Last modified: Wed, Feb 05, 2020 03:46:25 PM
+//Last modified: Wed, Feb 05, 2020 03:47:09 PM
 //Codeset: 1252
 requires maya "2019";
 requires "mtoa" "3.1.2";
@@ -14,8 +14,8 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "38983A7F-412F-A816-55A4-51856018F9C1";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 14.982640437150405 47.919930477107769 134.38993326397843 ;
-	setAttr ".r" -type "double3" -20.73835272962808 17.799999999965614 0 ;
+	setAttr ".t" -type "double3" 25.735747032692196 46.706803660479153 130.83049292736376 ;
+	setAttr ".r" -type "double3" -20.138352729628775 23.399999999965729 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "A61FC911-4DCE-865C-E2ED-E9BB668C809D";
 	setAttr -k off ".v" no;
