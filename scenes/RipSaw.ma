@@ -1,6 +1,6 @@
 //Maya ASCII 2019 scene
 //Name: RipSaw.ma
-//Last modified: Thu, Feb 20, 2020 12:58:12 AM
+//Last modified: Thu, Feb 20, 2020 09:44:27 AM
 //Codeset: 1252
 requires maya "2019";
 requires "mtoa" "3.1.2";
@@ -14,13 +14,13 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "5EEA657E-4604-C746-3482-79869E44D0EB";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 12.40999485161961 1.2621295730114517 3.6334702845549351 ;
-	setAttr ".r" -type "double3" -11.738352726805582 409.79999999897314 1.2318989849712365e-15 ;
+	setAttr ".t" -type "double3" 13.399323368653148 3.7216592434028231 6.9608548806917891 ;
+	setAttr ".r" -type "double3" -26.738352726847737 387.39999999893269 -8.9561262810965882e-16 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "6794A4AE-492D-6E9A-8C51-318437679D3B";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 8.1828312982506866;
+	setAttr ".coi" 14.147907486178731;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -60,14 +60,14 @@ createNode camera -s -n "frontShape" -p "front";
 	setAttr ".ai_translator" -type "string" "orthographic";
 createNode transform -s -n "side";
 	rename -uid "E0BC991E-478A-F95B-4E0A-2DA7018447B1";
-	setAttr ".t" -type "double3" 1000.1 0.63112606403326876 0.47580231016244123 ;
+	setAttr ".t" -type "double3" 1000.1 1.848123141058466 -6.6102613157423349 ;
 	setAttr ".r" -type "double3" 0 90 0 ;
 createNode camera -s -n "sideShape" -p "side";
 	rename -uid "2E1F9856-4CB2-8150-8F9A-7185213C4CFC";
 	setAttr -k off ".v";
 	setAttr ".rnd" no;
 	setAttr ".coi" 1000.1;
-	setAttr ".ow" 1.9890494642655847;
+	setAttr ".ow" 12.906057712001084;
 	setAttr ".imn" -type "string" "side";
 	setAttr ".den" -type "string" "side_depth";
 	setAttr ".man" -type "string" "side_mask";
