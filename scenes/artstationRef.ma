@@ -1,6 +1,6 @@
 //Maya ASCII 2019 scene
 //Name: artstationRef.ma
-//Last modified: Sun, Mar 08, 2020 11:56:32 PM
+//Last modified: Mon, Mar 09, 2020 03:24:55 PM
 //Codeset: 1252
 requires maya "2019";
 requires "mtoa" "3.1.2";
@@ -14,13 +14,13 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "40B4DB82-4D7C-A0A5-331B-A386536CA863";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -63.949459675885322 25.821390388915869 53.554532008554133 ;
-	setAttr ".r" -type "double3" -18.338352730374094 -54.600000000000328 -2.7452598438518358e-15 ;
+	setAttr ".t" -type "double3" -50.811885357457264 12.643475102528292 49.805473953470063 ;
+	setAttr ".r" -type "double3" -11.738352730373927 -52.600000000000016 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "79502C0B-438F-BF08-4E37-6A8E6CE605D0";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 107.53591153219435;
+	setAttr ".coi" 89.596418478422677;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
