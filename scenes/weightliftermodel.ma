@@ -1,6 +1,6 @@
 //Maya ASCII 2019 scene
 //Name: weightliftermodel.ma
-//Last modified: Tue, Mar 17, 2020 04:40:57 PM
+//Last modified: Tue, Mar 17, 2020 04:42:37 PM
 //Codeset: 1252
 requires maya "2019";
 requires "mtoa" "3.1.2";
@@ -14,13 +14,13 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "2CA78479-44EB-706A-F249-23AA31281660";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 38.21920023088898 29.81879046895456 -13.166420854083107 ;
-	setAttr ".r" -type "double3" -33.338352729551524 107.79999999999625 0 ;
+	setAttr ".t" -type "double3" 23.893122091863447 33.811115848938336 61.074925867433961 ;
+	setAttr ".r" -type "double3" -24.338352729534087 20.599999999993802 -1.6989061913420361e-15 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "654BE319-45DB-7396-4A0C-59BCC0A80E2F";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 47.374469590023196;
+	setAttr ".coi" 72.862692176689336;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -99,14 +99,14 @@ createNode mesh -n "pCubeShape1" -p "pCube1";
 	setAttr ".pt[24]" -type "float3" -7.4505806e-09 0 0.065220475 ;
 	setAttr ".pt[25]" -type "float3" 1.4551915e-11 0 0.065220475 ;
 	setAttr ".pt[28]" -type "float3" 7.4505806e-09 0 0.065220475 ;
-	setAttr ".pt[38]" -type "float3" 1.0318009 0 0.037635304 ;
-	setAttr ".pt[39]" -type "float3" 1.0318009 0 0.037635304 ;
-	setAttr ".pt[40]" -type "float3" 1.0318009 0 -0.19197603 ;
-	setAttr ".pt[41]" -type "float3" 1.0318009 0 -0.19197603 ;
-	setAttr ".pt[42]" -type "float3" -1.0318009 0 0.037635304 ;
-	setAttr ".pt[43]" -type "float3" -1.0318009 0 -0.19197603 ;
-	setAttr ".pt[44]" -type "float3" -1.0318009 0 0.037635304 ;
-	setAttr ".pt[45]" -type "float3" -1.0318009 0 -0.19197603 ;
+	setAttr ".pt[38]" -type "float3" 1.0318009 0 0.37025571 ;
+	setAttr ".pt[39]" -type "float3" 1.0318009 0 0.37025571 ;
+	setAttr ".pt[40]" -type "float3" 1.0318009 0 0.14064439 ;
+	setAttr ".pt[41]" -type "float3" 1.0318009 0 0.14064439 ;
+	setAttr ".pt[42]" -type "float3" -1.0318009 0 0.37025571 ;
+	setAttr ".pt[43]" -type "float3" -1.0318009 0 0.14064439 ;
+	setAttr ".pt[44]" -type "float3" -1.0318009 0 0.37025571 ;
+	setAttr ".pt[45]" -type "float3" -1.0318009 0 0.14064439 ;
 	setAttr ".dr" 1;
 	setAttr ".dsm" 1;
 	setAttr ".ai_translator" -type "string" "polymesh";
